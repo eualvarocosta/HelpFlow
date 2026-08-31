@@ -1,0 +1,24 @@
+<section class="form-section">
+    <div class="text">
+        <h3>
+            Entre em contato conosco
+        </h3>
+        <p>Possuimos os melhores profissionais para resolverem seus problemas</p>
+    </div>
+    <form [formGroup]="msg">
+        <label for="nome">Nome</label>
+        <input id="nome" formControlName="nome"/>
+        <label for="email">Email</label>
+        <input id="email" formControlName="email"/>
+        
+        <btn-primary 
+        btn-text="Enviar" 
+        variant="secondary"
+        (submit)="onSubmit()"
+        [disabled]="!msg.valid"
+        [loading]="loading()"
+        
+        >
+        </btn-primary>
+    </form>
+</section>

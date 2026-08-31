@@ -1,0 +1,77 @@
+/*Configuração geral da página*/
+main{
+    display: flex;
+    flex-direction: column;
+    gap: 84;
+
+}
+
+/* Anuncio do produto e imagem */
+.first-part{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 0 70px;
+    font-family:"Roboto", sans-serif;
+
+    span{
+        font-size: 30px;
+        font-weight: 700;
+        color: #1591EA;
+    }
+
+    h1{
+        font-size: 70px;
+        font-weight: 900;
+        color: #00008A;
+    }
+    
+    
+}
+
+/* Descrição do problema */
+.second-part{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+    padding: 0 70px; 
+
+    gap: 70px;
+
+    h2{
+        font-size: 50px;
+        font-weight: 600;
+        font-family: "Roboto", sans-serif;
+        color: #00008A;
+        
+    }
+    p{
+        font-size: 30px;
+        font-style: italic;
+        font-weight: 300;
+        font-family: "Poppins", sans-serif;
+    }
+    margin-bottom: 40px;
+}
+
+/*Botão*/
+.cta-section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-bottom: 40px;
+}
+
+/* Apresentação com minímo de 1080px */
+@media (min-width: 1080px) {
+    .first-part{
+        flex-direction: row;
+    }
+    .second-part{
+        flex-direction: row;
+    }
+}
